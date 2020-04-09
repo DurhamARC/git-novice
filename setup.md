@@ -3,14 +3,8 @@ layout: page
 title: Setup
 ---
 
+Please follow the instructions below to set up git in advance of the training course. If you run into any problems, please [drop me an email](mailto:alison.r.clarke@durham.ac.uk).
+
 {% include sc/setup.html %}
-
-We'll do our work in the `Desktop` folder so make sure you change your working directory to it with:
-
-~~~
-$ cd
-$ cd Desktop
-~~~
-{: .language-bash}
 
 [workshop-setup]: https://carpentries.github.io/workshop-template/#git
