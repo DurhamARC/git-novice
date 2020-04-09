@@ -1,0 +1,9 @@
+.tab-content {
+  border: solid rgb(221, 221, 221) 1px;
+  border-top: none;
+  padding: 10px;
+}
+
+.nav-tabs li a {
+  border: solid rgb(241, 241, 241) 1px;
+}
