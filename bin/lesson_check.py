@@ -34,6 +34,7 @@ REQUIRED_FILES = {
     '%/LICENSE.md': True,
     '%/README.md': False,
     '%/_extras/discuss.md': True,
+    '%/_extras/further-reading.md': True,
     '%/_extras/guide.md': True,
     '%/index.md': True,
     '%/reference.md': True,
