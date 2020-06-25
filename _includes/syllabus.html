@@ -20,7 +20,7 @@
     {% if multiday %}<td class="col-md-1"></td>{% endif %}
     <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}"></td>
     <td class="col-md-3"><a href="{{ relative_root_path }}{% link setup.md %}">Setup</a></td>
-    <td class="col-md-7">Download files required for the lesson</td>
+    <td class="col-md-7">Install the necessary tools for the lesson.</td>
   </tr>
   {% for episode in site.episodes %}
     {% if episode.start %} {% comment %} Starting a new day? {% endcomment %}
@@ -41,23 +41,29 @@
     {% assign minutes = current | modulo: 60 %}
     <tr>
       {% if multiday %}<td class="col-md-1">{% if episode.start %}Day {{ day }}{% endif %}</td>{% endif %}
-      <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
+      <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}">
+        {% if episode.teaching == 0 && episode.break == null %}
+          Further reading
+        {% else %}
+          {% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}
+        {% endif %}
+      </td>
       <td class="col-md-3">
-        {% assign lesson_number = lesson_number | plus: 1 %}
-	{{ lesson_number }}. <a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a>
+        {% if episode.break %}
+          Break 
+        {% else %}
+          {% assign lesson_number = lesson_number | plus: 1 %}
+  	{{ lesson_number }}. <a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a>
+        {% endif %}
       </td>
       <td class="col-md-7">
-        {% if episode.break %}
-          Break
-        {% else %}
-          {% if episode.questions %}
-            {% for question in episode.questions %}
-              {{question|markdownify|strip_html}}
-              {% unless forloop.last %}
-              <br/>
-              {% endunless %}
-            {% endfor %}
-          {% endif %}
+        {% if episode.questions %}
+          {% for question in episode.questions %}
+            {{question|markdownify|strip_html}}
+            {% unless forloop.last %}
+            <br/>
+            {% endunless %}
+          {% endfor %}
         {% endif %}
       </td>
     </tr>

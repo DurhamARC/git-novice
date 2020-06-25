@@ -1,7 +1,7 @@
 ---
 title: Conflicts
-teaching: 15
-exercises: 0
+teaching: 10
+exercises: 15
 questions:
 - "What do I do when my changes conflict with someone else's?"
 objectives:
@@ -164,7 +164,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 The `git pull` command updates the local repository to include those
 changes already included in the remote repository.
-After the changes from remote branch have been fetched, Git detects that changes made to the local copy 
+After the changes from remote branch have been fetched, Git detects that changes made to the local copy
 overlap with those made to the remote repository, and therefore refuses to merge the two versions to
 stop us from trampling on our previous work. The conflict is marked in
 in the affected file:
