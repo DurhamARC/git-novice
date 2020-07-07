@@ -20,7 +20,6 @@ For some of the course you'll be working with a partner. The schedule is on the 
  * Please follow along with the commands as I demonstrate; there’ll be time at the end of each section to make sure you’ve completed it.
  * Please turn video on if possible (we’d love to see your children and pets!) but mute your microphone unless you need to ask a question.
  * Feel free to chat or ask questions in the meeting chat in Teams.
- * Use the "hands up" to respond to questions. Does everyone know how to do that?
 
 ### Getting Help
 
