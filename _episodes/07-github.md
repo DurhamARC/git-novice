@@ -70,11 +70,11 @@ remote repository on GitHub appears empty as it doesn't contain any files yet.
 The next step is to connect the two repositories.  We do this by making the
 GitHub repository a [remote]({{ page.root}}{% link reference.md %}#remote) for the local repository.
 The home page of the repository on GitHub includes the string we need to
-identify it:
+identify it.
 
-![Where to Find Repository URL on GitHub](../fig/github-find-repo-string.png)
+**Click on the 'HTTPS' link to change the [protocol]({{ page.root }}{% link reference.md %}#protocol) from SSH to HTTPS.** This is important because if you attempt to use the SSH URL without having previously set up SSH keys in GitHub, it will not work.
 
-Click on the 'HTTPS' link to change the [protocol]({{ page.root }}{% link reference.md %}#protocol) from SSH to HTTPS.
+![Changing the Repository URL on GitHub](../fig/github-change-repo-string.png)
 
 > ## HTTPS vs. SSH
 >
@@ -87,10 +87,11 @@ Click on the 'HTTPS' link to change the [protocol]({{ page.root }}{% link refere
 > (this one has a screencast).
 {: .callout}
 
-![Changing the Repository URL on GitHub](../fig/github-change-repo-string.png)
+Click on the 'copy' button to copy the URL to the clipboard:
 
-Copy that URL from the browser, go into the local `planets` repository, and run
-this command:
+![Where to Find Repository URL on GitHub](../fig/github-find-repo-string.png)
+
+Now go into the local `planets` repository, and run this command:
 
 ~~~
 $ git remote add origin https://github.com/vlad/planets.git
