@@ -45,6 +45,19 @@ For these lessons, we will be interacting with [GitHub](https://github.com/) and
 {: .callout}
 
 
+>## Default branch name
+> The term `master` has historically been used in many areas of computing, including in git, where it is the default name
+> for the main branch. Given the connotations of the word, in 2020 there was a push to remove this name, and GitHub now
+> uses `main` instead of `master`. Newer versions of git (2.28 and later) also allow users to change the default branch
+> name for new repositories:
+{: .callout}
+> ~~~
+> $ git --version
+> $ git config --global init.defaultBranch main
+> ~~~
+> {: .language-bash}
+
+
 > ## Line Endings
 >
 > As with other keys, when you hit <kbd>Return</kbd> on your keyboard,
@@ -105,7 +118,7 @@ your changes, press <kbd>Esc</kbd> then type `:q!` and hit <kbd>Return</kbd>.
 > If you want to save your changes and quit, press <kbd>Esc</kbd> then type `:wq` and hit <kbd>Return</kbd>.
 {: .callout}
 
-The four commands we just ran above only need to be run once: the flag `--global` tells Git
+The commands we ran above only need to be run once: the flag `--global` tells Git
 to use the settings for every project, in your user account, on this computer.
 
 You can check your settings at any time:
