@@ -54,3 +54,15 @@ $(window).scroll(function(){
         }
     }
 });
+
+
+// Select data-os tabs based on current operating system
+$(document).ready(function() {
+  var selectedTabs = "mds";
+  if (navigator.appVersion.indexOf("Win") != -1) selectedTabs = "mds";
+  if (navigator.appVersion.indexOf("Mac") != -1) selectedTabs = "macos";
+  if (navigator.appVersion.indexOf("Linux") != -1) selectedTabs = "linux";
+  $('a[data-os=' + selectedTabs + ']').each(function(){
+    $(this).click();
+  });
+});
