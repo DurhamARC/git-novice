@@ -22,7 +22,7 @@ Systems like Git allow us to move work between any two repositories.  In
 practice, though, it's easiest to use one copy as a central hub, and to keep it
 on the web rather than on someone's laptop.  Most programmers use hosting
 services like [GitHub](https://github.com), [Bitbucket](https://bitbucket.org) or
-[GitLab](https://gitlab.com/) to hold those master copies; we'll explore the pros
+[GitLab](https://gitlab.com/) to hold those primary copies; we'll explore the pros
 and cons of this in the final section of this lesson.
 
 Let's start by sharing the changes we've made to our current project with the
