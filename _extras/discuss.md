@@ -241,7 +241,7 @@ $ git status
 {: .language-bash}
 
 ~~~
-On branch master
+On branch main
 nothing to commit, working directory clean
 ~~~
 {: .output}
@@ -256,7 +256,7 @@ $ git status
 {: .language-bash}
 
 ~~~
-On branch master
+On branch main
 Changes to be committed:
    (use "git reset HEAD <file>..." to unstage)
 
@@ -298,7 +298,7 @@ $ git status
 {: .language-bash}
 
 ~~~
-On branch master
+On branch main
 Changes not staged for commit:
    (use "git add/rm <file>..." to update what will be committed)
    (use "git checkout -- <file>..." to discard changes in working directory)
@@ -321,7 +321,7 @@ $ git status
 {: .language-bash}
 
 ~~~
-On branch master
+On branch main
 Changes to be committed:
    (use "git reset HEAD <file>..." to unstage)
 
@@ -369,7 +369,7 @@ $ git status
 {: .language-bash}
 
 ~~~
-On branch master
+On branch main
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
@@ -407,7 +407,7 @@ $ git status
 {: .language-bash}
 
 ~~~
-On branch master
+On branch main
 Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
@@ -435,7 +435,7 @@ $ git status
 {: .language-bash}
 
 ~~~
-On branch master
+On branch main
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
@@ -453,7 +453,7 @@ The final step, as before, is to commit our change to the repository:
 $ git commit -m 'Superman's home is Earth, told you before.'
 ~~~
 {: .language-bash}
-	
+
 ## Further .gitignore concepts
 
 For additional documentation on .gitignore, please reference
@@ -462,7 +462,7 @@ For additional documentation on .gitignore, please reference
 In the ignore exercise, learners were presented with two variations of ignoring
 nested files. Depending on the organization of your repository, one may suit
 your needs over another. Keep in mind that the way that Git travels along
-directory paths can be confusing. 
+directory paths can be confusing.
 
 Sometimes the `**` pattern comes in handy, too, which matches multiple
 directory levels. E.g. `**/results/plots/*` would make git ignore the
@@ -479,7 +479,7 @@ directory levels. E.g. `**/results/plots/*` would make git ignore the
 > results/run002.log
 > ~~~
 > {: .language-bash}
-> 
+>
 > And a .gitignore that looks like:
 >
 > ~~~
@@ -501,7 +501,6 @@ directory levels. E.g. `**/results/plots/*` would make git ignore the
 > > !results/data/*       # do not ignore the .dat files in reults/data
 > > ~~~
 > > {: .output}
-> > 
+> >
 > {: .solution}
 {: .challenge}
-

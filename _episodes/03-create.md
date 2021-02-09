@@ -93,7 +93,7 @@ $ git status
 ~~~
 {: .language-bash}
 ~~~
-On branch master
+On branch main
 
 No commits yet
 
@@ -103,6 +103,17 @@ nothing to commit (create/copy files and use "git add" to track)
 
 If you are using a different version of `git`, the exact
 wording of the output might be slightly different.
+
+> ## Changing the branch name
+>
+> If you are on a vesion of git (prior to 2.28) and wish to change the branch name
+> `master` to `main`, you can do so with this command:
+>
+> ~~~
+> $ git branch -m master main
+> ~~~
+> {: .language-bash}
+{: .callout}
 
 > ## Places to Create Git Repositories
 >

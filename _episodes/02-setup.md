@@ -37,7 +37,7 @@ which means that any changes pushed to
 another Git host server
 in a later lesson will include this information.
 
-For these lessons, we will be interacting with [GitHub](https://github.com/) and so the email address used should be the same as the one used when setting up your GitHub account. If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private][git-privacy]. 
+For these lessons, we will be interacting with [GitHub](https://github.com/) and so the email address used should be the same as the one used when setting up your GitHub account. If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private][git-privacy].
 
 >## Keeping your email private
 >
@@ -50,12 +50,14 @@ For these lessons, we will be interacting with [GitHub](https://github.com/) and
 > for the main branch. Given the connotations of the word, in 2020 there was a push to remove this name, and GitHub now
 > uses `main` instead of `master`. Newer versions of git (2.28 and later) also allow users to change the default branch
 > name for new repositories:
-{: .callout}
+>
 > ~~~
 > $ git --version
 > $ git config --global init.defaultBranch main
 > ~~~
 > {: .language-bash}
+> If you are using an earlier version of git, we will show you how to use `main` instead of `master` later on.
+{: .callout}
 
 
 > ## Line Endings
@@ -65,8 +67,8 @@ For these lessons, we will be interacting with [GitHub](https://github.com/) and
 > Different operating systems use different character(s) to represent the end of a line.
 > (You may also hear these referred to as newlines or line breaks.)
 > Because Git uses these characters to compare files,
-> it may cause unexpected issues when editing a file on different machines. 
-> Though it is beyond the scope of this lesson, you can read more about this issue 
+> it may cause unexpected issues when editing a file on different machines.
+> Though it is beyond the scope of this lesson, you can read more about this issue
 > [in the Pro Git book](https://www.git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).
 {: .callout}
 >
@@ -87,7 +89,7 @@ For these lessons, we will be interacting with [GitHub](https://github.com/) and
 > $ git config --global core.autocrlf true
 > ~~~
 > {: .language-bash}
-> 
+>
 
 
 Dracula also has to set his favorite text editor, following this table:
