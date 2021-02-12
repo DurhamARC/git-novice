@@ -104,6 +104,21 @@ nothing to commit (create/copy files and use "git add" to track)
 If you are using a different version of `git`, the exact
 wording of the output might be slightly different.
 
+> ## A note on branches
+>
+> We won't be discussing branches in detail in this course, but you can think of a
+> branch as a single chain of changes or commits, each building on the last. We will
+> be working with a single branch (`main` or `master`), but it's possible to create a
+> tree or graph of branches:
+>
+> ![Git branches fork: Bunyk, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons]({{ page.root }}/fig/branches.svg)
+>
+> If you want to find out more about branching, take a look at the
+> [Further Reading](/futher-reading/index.html) page for resources.
+>
+> {: .language-bash}
+{: .callout}
+
 > ## Changing the branch name
 >
 > If you are on a vesion of git (prior to 2.28) and wish to change the branch name
