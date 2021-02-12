@@ -1,21 +1,24 @@
 ---
-title: Welcome
+title: Welcome back
 teaching: 15
 start: true
 exercises: 0
 questions:
-- "How will this course work?"
+- "How will today work?"
 objectives:
-- "Understand how the course will be run."
+- "Understand what will happen today."
 - "Understand how to ask for help."
 keypoints:
 - "Please do ask for help if you're stuck!"
-- "Please let me know how you're doing as the course goes on."
+- "Make a note of the GitHub usernames of your collaborators"
 ---
 
 Despite this being an online course we want it to be as interactive as possible, so please follow along and be ready to let us know whether you're ready to move on, and if you need help.
 
-For some of the course you'll be working with a partner. The schedule is on the homepage. We will have a short break at around 10.55.
+For some of today you'll be working with a partner or in a group, using breakout rooms. I'm going to allocate the groups now. Please can you make a note of who you'll be working with and their GitHub username(s), which you'll need shortly.
+
+
+We will have a break at around 10.20 and 11.20.
 
  * The course site contains full details of the course; I suggest you have it open alongside your git terminal/console. Please read the introduction on the home page while you’re waiting.
  * Please follow along with the commands as I demonstrate; there’ll be time at the end of each section to make sure you’ve completed it.

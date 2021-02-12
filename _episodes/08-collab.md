@@ -1,7 +1,7 @@
 ---
 title: Collaborating
-teaching: 10
-exercises: 20
+teaching: 15
+exercises: 25
 questions:
 - "How can I use version control to collaborate with other people?"
 objectives:
@@ -30,6 +30,8 @@ button on the right, select Manage access, click Invite a collaborator, and
 then enter your partner's username.
 
 ![Adding Collaborators on GitHub](../fig/github-add-collaborators.png)
+
+(Please do this now as occasionally the invitations don't come through straight away in GitHub.)
 
 To accept access to the Owner's repo, the Collaborator
 needs to go to [https://github.com/notifications](https://github.com/notifications).

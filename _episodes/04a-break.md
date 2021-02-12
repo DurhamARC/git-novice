@@ -1,4 +1,4 @@
 ---
-title: Break 1
+title: Break
 break: 10
 ---
