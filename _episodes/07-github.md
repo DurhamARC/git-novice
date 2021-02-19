@@ -218,6 +218,36 @@ Pulling has no effect in this case because the two repositories are already
 synchronized.  If someone else had pushed some changes to the repository on
 GitHub, though, this command would download them to our local repository.
 
+> ## Warning in newer git versions
+>
+> If you're using a version of git > 2.27, you may see the following warning
+> when you call `git pull origin main`:
+> ~~~
+> hint: Pulling without specifying how to reconcile divergent branches is
+> hint: discouraged. You can squelch this message by running one of the following
+> hint: commands sometime before your next pull:
+> hint:
+> hint:   git config pull.rebase false  # merge (the default strategy)
+> hint:   git config pull.rebase true   # rebase
+> hint:   git config pull.ff only       # fast-forward only
+> hint:
+> hint: You can replace "git config" with "git config --global" to set a default
+> hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+> hint: or --ff-only on the command line to override the configured default per
+> hint: invocation.
+> ~~~
+> {: }
+>
+> If you'd like to suppress the message then type the following:
+> ~~~
+> git config pull.rebase false
+> ~~~
+> {: .language-bash}
+> This will use the default behaviour when pulling. We'll explain more in a later
+> section.
+{: .callout}
+
+
 > ## GitHub GUI
 >
 > Browse to your `planets` repository on GitHub.

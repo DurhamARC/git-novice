@@ -326,6 +326,24 @@ Conflicts can also be minimized with project management strategies:
   project convention that is governing and use code style tools (e.g.
   `htmltidy`, `perltidy`, `rubocop`, etc.) to enforce, if necessary
 
+
+> ## git pull settings
+>
+> Remember the warning some of us saw when we first called git pull? We can tell
+> git to deal with conflicts in different ways. The default behaviour which we
+> saw above is to merge the upstream changes into our local version. An alternative
+> is to use:
+> ~~~
+> git config pull.ff only
+> ~~~
+> {: .language-bash}
+> In this case, git will refuse to pull the upstream changes if there are new commits
+> in both your local copy and upstream (as in the case above). You would then have to
+> manually call `git merge` to merge the upstream changes with your local copy. This
+> behaviour can help you to know exactly what's happening when you pull.
+{: .callout}
+
+
 > ## Solving Conflicts that You Create
 >
 > Clone the repository created by your instructor.
