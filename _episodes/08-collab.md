@@ -12,7 +12,7 @@ keypoints:
 - "`git clone` copies a remote repository to create a local repository with a remote called `origin` automatically set up."
 ---
 
-For the next step, get into pairs.  One person will be the "Owner" and the other
+For the next step, you will work in pairs.  One person will be the "Owner" and the other
 will be the "Collaborator". The goal is that the Collaborator add changes into
 the Owner's repository. We will switch roles at the end, so both persons will
 play Owner and Collaborator.
@@ -31,11 +31,13 @@ then enter your partner's username.
 
 ![Adding Collaborators on GitHub](../fig/github-add-collaborators.png)
 
-(Please do this now as occasionally the invitations don't come through straight away in GitHub.)
 
 To accept access to the Owner's repo, the Collaborator
 needs to go to [https://github.com/notifications](https://github.com/notifications).
-Once there she can accept access to the Owner's repo.
+Once there she can accept access to the Owner's repo. Alternatively the Collaborator
+should receive an email invitation which they can click on to accept.
+
+![GitHub repository invitation email](../fig/github-invitation-email.png)
 
 Next, the Collaborator needs to download a copy of the Owner's repository to her
  machine. This is called "cloning a repo". To clone the Owner's repo into
