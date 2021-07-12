@@ -119,17 +119,6 @@ wording of the output might be slightly different.
 > {: .language-bash}
 {: .callout}
 
-> ## Changing the branch name
->
-> If you are on a vesion of git (prior to 2.28) and wish to change the branch name
-> `master` to `main`, you can do so with this command:
->
-> ~~~
-> $ git branch -m master main
-> ~~~
-> {: .language-bash}
-{: .callout}
-
 > ## Places to Create Git Repositories
 >
 > Along with tracking information about planets (the project we have already created),
